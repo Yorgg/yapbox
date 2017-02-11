@@ -1,0 +1,14 @@
+<div id="msg-box">
+  <ul data-chat-room-id="<%=@chat_room%>"></ul>
+</div>
+
+<%= form_for :message, url: '#', html: {id: 'messages'}  do |f|  %>
+  <div class="form-group">
+    <%= f.text_area :body, class: 'form-control' %>
+    <small class="text-muted">
+      From 2 to 1000 characters
+    </small>
+  </div>
+  <%= f.submit "Post", class: '' %>
+<% end %>
+
