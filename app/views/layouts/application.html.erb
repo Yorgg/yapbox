@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TalkToMe</title>
+    <title>yapbox</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700')
+    </style>
   </head>
 
   <body>
+    <div class="page-wrapper">
     <%= yield %>
+    </div>
   </body>
 </html>

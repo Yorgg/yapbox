@@ -1,11 +1,7 @@
-<h1> YapBox </h1>
-<p> A simple chat app with end-to-end encryption </p>
-
-<%= form_for @chat_room do |f| %>
-  <div class="form-group">
-    <p> Create a <i>secret code</i>:</p>
-    <%= f.text_field :secret, class: 'form-control' %>
-  </div>
-
-  <%= f.submit "Generate Chat Room", class: 'btn btn-primary' %>
-<% end %>
+<div id="homepage" class="homepage">
+  <h1> YapBox </h1>
+  <p class="intro"> A simple chat app </p>
+  <%= text_field_tag :url %> 
+  <br>
+  <%= link_to "Create Room", '#', class: 'button', id: 'chat-room' %>
+</div>

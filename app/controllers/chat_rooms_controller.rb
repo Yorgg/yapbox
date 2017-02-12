@@ -1,10 +1,10 @@
+#TODO move this somewhere else
 class Message
   attr_accessor :body, :name
 end
 
 class ChatRoomsController < ApplicationController
   def new
-    @chat_room = ChatRoom.new
   end
 
   def create
@@ -18,7 +18,7 @@ class ChatRoomsController < ApplicationController
   end
 
   def show
-    @chat_room = params[:id] #TODO add stuff later
+    @chat_room = params[:id] 
     @message = Message.new
   end
 

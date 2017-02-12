@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170209140023) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "chat_rooms", force: :cascade do |t|
     t.text     "title"
     t.text     "secret"

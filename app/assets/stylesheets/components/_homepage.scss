@@ -1,0 +1,40 @@
+.homepage {
+  @include centered-box(300px, 300px);
+  @include box-shadow(5px, 4px, 10px, #eee);
+  background-color: white;
+
+  .intro {
+    margin-bottom: 60px;
+    color: lighten( $text-c, 30% );
+    font-size: 1.2em;
+  }
+
+  .button {
+    background-color: $theme-c;
+    text-decoration : none;
+    padding : 9px;
+    color: white;
+  }
+
+  .link-to-room {
+    font-size: 1.4em; 
+  }
+
+  h1 {
+    margin-bottom: 0px;
+    padding-bottom: 0px
+  } 
+
+  .intro {
+    margin-top: 0px;
+    padding-top: 0px
+  }
+ 
+  input {
+    background-color: $back-c; 
+    padding: 9px;
+    width: 80%;
+    display: block;
+    margin: 0px auto; 
+  }
+}

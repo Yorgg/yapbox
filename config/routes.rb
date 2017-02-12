@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # Serve websocket cable requests in-process
   mount ActionCable.server => '/cable'
-  resources :chat_rooms, only: [:new, :create, :show]
+  get '/:id', to: 'chat_rooms#show'
+  resources :chat_rooms, only: [:create]
   root to: 'chat_rooms#new'
 end

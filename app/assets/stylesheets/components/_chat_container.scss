@@ -1,0 +1,42 @@
+.chat-msg-container { 
+  position: fixed;
+  top: 5%;
+  left: 25%;
+  width: 50%;
+  height: 70%;  
+  overflow-y: scroll;
+  .time {
+    font-weight: 300;
+    display: block;
+    font-size: 0.8em;
+    color: #999 ;
+  }
+
+  .content {
+    width: 90%;
+  }
+  ul { 
+    padding-left: 3px;
+  }
+  li {
+    font-weight: 300;
+    line-height: 1.6em;
+    width: 100%;
+    margin-bottom: 1.2em;
+    list-style: none;
+    color: $theme-c; 
+  }
+  .msg {
+    width: 90%;
+  }
+
+  .computer {
+    color: $text-c
+  }
+
+  .me {
+    font-weight: 400;
+  }
+}
+
+
